@@ -1,14 +1,17 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 import { useDropzone } from 'react-dropzone';
 
 const Dropzone = () => { 
+
+    const [files, setFiles] = useState([])
+
     function onDrop(acceptedFiles){ 
         console.log(acceptedFiles)
     }
 
     const { getRootProps, getInputProps } = useDropzone({  onDrop });
 
-    console.log(getRootProps)
+
 
 
 
