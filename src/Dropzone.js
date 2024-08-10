@@ -3,14 +3,17 @@ import { useDropzone } from 'react-dropzone';
 
 const Dropzone = () => { 
 
-    const [files, setFiles] = useState([])
+    const [file, setFile] = useState(null);
+    const [fileName, setFileName] = useState(null);
 
-    function onDrop(acceptedFiles){ 
-        setFiles(acceptedFiles) 
-        console.log("files", files)
+    function onDrop(acceptedFile){ 
+        setFileName(acceptedFile[0].name) 
+        setFile(acceptedFile)
     }
 
     const { getRootProps, getInputProps } = useDropzone({  onDrop });
+
+    console.log(fileName)
 
 
 
@@ -21,6 +24,7 @@ const Dropzone = () => {
             <h1>drag and drop files here</h1>
             <p>or click to open file browser</p>
             <input {...getInputProps()}/>
+            {fileName && <p>{fileName}</p>}
         </div>
     )
 }
