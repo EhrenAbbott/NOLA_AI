@@ -8,11 +8,15 @@ const Dropzone = () => {
 
     const { getRootProps, getInputProps } = useDropzone({  onDrop });
 
+    console.log(getRootProps)
+
 
 
     return ( 
-        <div> 
-            <h1>dropzone component</h1>
+        <div className='dropzone-area' {...getRootProps()}> 
+            <h1>drag and drop files here</h1>
+            <p>or click to open file browser</p>
+            <input {...getInputProps()}/>
         </div>
     )
 }
