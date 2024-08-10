@@ -1,0 +1,13 @@
+
+
+.dropzone-area { 
+    border: 3px dotted darkgrey;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+.dropzone-area:hover {
+    cursor: pointer;
+}
