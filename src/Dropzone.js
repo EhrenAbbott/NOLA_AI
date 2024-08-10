@@ -21,10 +21,8 @@ const Dropzone = () => {
 
     return ( 
         <div className='dropzone-area' {...getRootProps()}> 
-            <h1>drag and drop files here</h1>
-            <p>or click to open file browser</p>
             <input {...getInputProps()}/>
-            {fileName && <p>{fileName}</p>}
+            {fileName ? <p>{fileName}</p> : <h1>drag and drop files here</h1>}
         </div>
     )
 }
