@@ -13,7 +13,11 @@ const Dropzone = () => {
 
     const { getRootProps, getInputProps } = useDropzone({  
         onDrop, 
-        multiple: false,
+        accept: { 
+            'application/pdf': ['.pdf'], 
+            'application/pdx': ['.pdx']
+        },
+        multiple: false
      });
 
     console.log(fileName)
