@@ -11,7 +11,10 @@ const Dropzone = () => {
         setFile(acceptedFile)
     }
 
-    const { getRootProps, getInputProps } = useDropzone({  onDrop });
+    const { getRootProps, getInputProps } = useDropzone({  
+        onDrop, 
+        multiple: false,
+     });
 
     console.log(fileName)
 
