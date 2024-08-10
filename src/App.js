@@ -1,9 +1,10 @@
 import './style.css';
+import Dropzone from './Dropzone'
 
 function App() {
   return (
     <div className="App">
-      <h1>App component</h1>
+      <Dropzone/>
     </div>
   );
 }
