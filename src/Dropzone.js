@@ -6,7 +6,8 @@ const Dropzone = () => {
     const [files, setFiles] = useState([])
 
     function onDrop(acceptedFiles){ 
-        console.log(acceptedFiles)
+        setFiles(acceptedFiles) 
+        console.log("files", files)
     }
 
     const { getRootProps, getInputProps } = useDropzone({  onDrop });
