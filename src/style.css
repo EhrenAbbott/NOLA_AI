@@ -1,13 +1,23 @@
-
+* { 
+    box-sizing: border-box;
+}
 
 .dropzone-area { 
     border: 3px dotted darkgrey;
     padding: 20px;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
     background-color: antiquewhite;
+    height: 200px;
 }
 
 .dropzone-area:hover {
     cursor: pointer;
+}
+
+.dropzone-area-text { 
+    text-align: center;
 }

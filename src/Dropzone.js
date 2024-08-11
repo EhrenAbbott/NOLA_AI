@@ -26,15 +26,12 @@ const Dropzone = () => {
         multiple: false
      });
 
-
-
-
-
-
     return ( 
         <div className='dropzone-area' {...getRootProps()}> 
             <input {...getInputProps()}/>
-            {fileName ? <p>{fileName}</p> : <h1>drag and drop files here</h1>}
+            <div className='dropzone-area-text'>
+                {fileName ? <p>{fileName}</p> : <div><h1>Drag and drop files here</h1><p>-or click to use file browser-</p></div>}
+            </div>
         </div>
     )
 }
