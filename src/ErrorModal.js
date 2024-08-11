@@ -1,4 +1,3 @@
-import { findByLabelText } from '@testing-library/react';
 import React from 'react'; 
 import Modal from 'react-modal';
 
@@ -18,7 +17,8 @@ const customStyles = {
       maxWidth: '300px',
       borderRadius: '5px',
       margin: '50px auto',
-      alignItems: 'center'
+      alignItems: 'center',
+      outline: 'none',
     },
   };
 

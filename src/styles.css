@@ -19,9 +19,12 @@ body {
     height: 200px;
 }
 
+
 .dropzone-area:hover {
     cursor: pointer;
 }
+
+
 
 .dropzone-area-text { 
     text-align: center;
