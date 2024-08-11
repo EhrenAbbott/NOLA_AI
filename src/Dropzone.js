@@ -6,9 +6,13 @@ const Dropzone = () => {
     const [file, setFile] = useState(null);
     const [fileName, setFileName] = useState(null);
 
-    function onDrop(acceptedFile){ 
-        setFileName(acceptedFile[0].name) 
-        setFile(acceptedFile)
+    function onDrop(acceptedFile, rejectedFile){ 
+        if (acceptedFile.length > 0){ 
+            setFileName(acceptedFile[0].name) 
+            setFile(acceptedFile)
+        } else if (rejectedFile.length > 0) { 
+            console.log("rejectedFile")
+        }
     }
 
     const { getRootProps, getInputProps } = useDropzone({  
@@ -20,7 +24,6 @@ const Dropzone = () => {
         multiple: false
      });
 
-    console.log(fileName)
 
 
 
