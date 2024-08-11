@@ -6,6 +6,8 @@ const Dropzone = () => {
 
     const [file, setFile] = useState(null);
     const [fileName, setFileName] = useState(null);
+    const [errorMessage, setErrorMessage] = useState(null); 
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     function onDrop(acceptedFile, rejectedFile){ 
         if (acceptedFile.length > 0){ 
