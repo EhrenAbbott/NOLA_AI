@@ -11,7 +11,9 @@ const Dropzone = () => {
             setFileName(acceptedFile[0].name) 
             setFile(acceptedFile)
         } else if (rejectedFile.length > 0) { 
+            const error = "invalid type"
             console.log("rejectedFile")
+            alert(error)
         }
     }
 
