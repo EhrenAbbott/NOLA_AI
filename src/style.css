@@ -27,21 +27,6 @@ body {
     text-align: center;
 }
 
-.error-modal { 
-    background-color: darkgray;
-    border-color: 15px solid black;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
-    margin: auto auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    outline: none;
-}
-
 button:hover { 
     cursor: pointer;
 }
