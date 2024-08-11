@@ -21,6 +21,11 @@ const Dropzone = () => {
         }
     }
 
+    const closeModal = () => { 
+        setIsModalOpen(false)
+        setErrorMessage(null)
+    }
+
     const { getRootProps, getInputProps } = useDropzone({  
         onDrop, 
         accept: { 
