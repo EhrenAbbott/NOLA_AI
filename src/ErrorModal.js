@@ -11,8 +11,9 @@ const ErrorModal = ({isOpen, onRequestClose, message}) => {
             contentLabel="Error Message"
             className='error-modal'
         >
-            <h2>{message}</h2>
-            <button onClick={onRequestClose}>Close</button>
+            <h3 className='modal-header'>Invalid file type</h3>
+            <p className='modal-message'>{message}</p>
+            <button className='modal-button' onClick={onRequestClose}>Close</button>
         </Modal>
     )
 }

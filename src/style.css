@@ -1,5 +1,10 @@
 * { 
     box-sizing: border-box;
+    color: #222222;
+}
+
+body { 
+    background-color: whitesmoke;
 }
 
 .dropzone-area { 
@@ -21,3 +26,39 @@
 .dropzone-area-text { 
     text-align: center;
 }
+
+.error-modal { 
+    background-color: darkgray;
+    border-color: 15px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: auto auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button:hover { 
+    cursor: pointer;
+}
+
+.modal-header { 
+    margin: none;
+}
+
+.modal-message { 
+    margin-top: -10px;
+}
+
+.modal-button { 
+    border-radius: 30px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+} 
+
+

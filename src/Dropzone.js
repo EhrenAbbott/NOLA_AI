@@ -15,7 +15,7 @@ const Dropzone = () => {
             setFile(acceptedFile)
             setErrorMessage(null)
         } else if (rejectedFile.length > 0) { 
-            const error = "Invalid  file type. Please upload either a .pdf or .pdx file"
+            const error = "Please upload either a .pdf or .pdx file"
             setErrorMessage(error)
             setIsModalOpen(true)
         }
