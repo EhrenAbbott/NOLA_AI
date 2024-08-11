@@ -19,12 +19,9 @@ body {
     height: 200px;
 }
 
-
 .dropzone-area:hover {
     cursor: pointer;
 }
-
-
 
 .dropzone-area-text { 
     text-align: center;
@@ -40,6 +37,8 @@ button:hover {
 
 .modal-message { 
     margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .modal-button { 

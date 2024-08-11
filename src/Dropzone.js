@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import ErrorModal from './ErrorModal';
 
-const Dropzone = () => { 
+function Dropzone() { 
 
     const [file, setFile] = useState(null);
     const [fileName, setFileName] = useState(null);
@@ -15,7 +15,7 @@ const Dropzone = () => {
             setFile(acceptedFile)
             setErrorMessage(null)
         } else if (rejectedFile.length > 0) { 
-            const error = "Please upload either a .pdf or .pdx file"
+            const error = "Invalid file type. Please upload either a .pdf or .pdx file."
             setErrorMessage(error)
             setIsModalOpen(true)
         }

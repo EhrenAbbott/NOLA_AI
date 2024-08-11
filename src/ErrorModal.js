@@ -16,13 +16,13 @@ const customStyles = {
       textAlign: 'center',
       maxWidth: '300px',
       borderRadius: '5px',
-      margin: '50px auto',
+      margin: '30px auto',
       alignItems: 'center',
       outline: 'none',
     },
   };
 
-const ErrorModal = ({isOpen, onRequestClose, message}) => { 
+function ErrorModal({isOpen, onRequestClose, message}) { 
     return( 
         <Modal
             isOpen={isOpen}
@@ -31,7 +31,7 @@ const ErrorModal = ({isOpen, onRequestClose, message}) => {
             className='error-modal'
             style={customStyles}
         >
-            <h3 className='modal-header'>Invalid file type</h3>
+            <h3 className='modal-header'>Error:</h3>
             <p className='modal-message'>{message}</p>
             <button className='modal-button' onClick={onRequestClose}>Close</button>
         </Modal>
