@@ -41,6 +41,11 @@ const Dropzone = () => {
             <div className='dropzone-area-text'>
                 {fileName ? <p>{fileName}</p> : <div><h1>Drag and drop files here</h1><p>-or click to use file browser-</p></div>}
             </div>
+            <ErrorModal  
+                isOpen={isModalOpen}
+                onRequestClose={closeModal}
+                message={errorMessage}
+            />
         </div>
     )
 }
