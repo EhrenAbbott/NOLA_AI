@@ -1,5 +1,6 @@
 import React, { useState } from 'react'; 
 import { useDropzone } from 'react-dropzone';
+import ErrorModal from './ErrorModal';
 
 const Dropzone = () => { 
 
